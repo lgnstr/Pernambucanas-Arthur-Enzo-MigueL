@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pernambucanas</title>
+  <link rel="icon" type="image/png" href="img/logo.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slide.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Pernambucanas Logo" class="logo-img">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="feminino.html">Feminino</a></li>
+        <li><a href="masculino.html">Masculino</a></li>
+        <li><a href="infantil.html">Infantil</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="casa.html">Casa</a></li>
+        <li><a href="eletroportaveis.html">Eletroportáteis</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="O que você procura?" class="search-input">
+      <button class="search-button">🔍</button>
+    </div>    
+    <div class="header-buttons">
+      <a href="index.html">
+        <img src="img/cadastro.png" alt="Cadastro" class="signup-image">
+      </a>
+      <a href="home.html">
+        <img src="img/home.svg" alt="Home" class="home-image"> 
+      </a>
+
+     <a id="cartButton">
+      <img src="img/cart.svg" alt="Carrinho" class="cart-image">
+     </a>
+  </header>
+
+  <div id="cartModal" class="cart-modal">
+  <div class="cart-header">
+    Carrinho de Compras
+    <button id="closeCart" class="close-cart-btn">×</button>
+  </div>
+  <div class="cart-content" id="cartContent"></div>
+  <div class="cart-footer">
+    <button class="checkout-button">Finalizar Compra</button>
+  </div>
+</div>
+
+  <script src="cart.js"></script>     
+    
+    <div class="container">
+        <Left><h2>Departamento de Beleza</h2></Left> 
+        <div id="section3">
+            <div class="main">
+                <div class="product">
+                    <img src="img/lapiz.png" alt="Produto 1">
+                    <h2> Lápis para Contorno Labial Color Icon wet n wild Rosa</h2>
+                    <p></p>
+                    <p class="price">R$ 24,99
+                    </p>
+                    <button onclick="addToCart('Lápis para Contorno Labial Color Icon wet n wild Rosa', 24.99, 'img/lapiz.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/batom.png" alt="Produto 1">
+                    <h2>Batom Velvety Bg07 Glass Hb5487 Rubyrose- Ruby Rose</h2>
+                    <p></p>
+                    <p class="price">R$ 24,98</p>
+                    <button onclick="addToCart('Batom Velvety Bg07 Glass Hb5487 Rubyrose- Ruby Rose', 24.98, 'img/batom.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/creme.png" alt="Produto 1">
+                    <h2>Vult Mega Base Liquida V250 26Ml</h2>
+                    <p></p>
+                    <p class="price">R$ 26,98</p>
+                    <button onclick="addToCart('Vult Mega Base Liquida V250 26Ml', 26.98, 'img/creme.png')">Comprar Agora</button>
+                </div>
+
+                  <div class="product">
+                    <img src="img/glos.png" alt="Produto 1">
+                    <h2>Batom Liquido Soft Blur Bg05 Glass Hb5795 - Ruby Rose</h2>
+                    <p></p>
+                    <p class="price">R$ 22,49</p>
+                    <button onclick="addToCart('Batom Liquido Soft Blur Bg05 Glass Hb5795 - Ruby Rose', 22.49, 'img/glos.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/pó.png" alt="Produto 1">
+                    <h2> Blush Compacto 6g Cor 50 Bauny</h2>
+                    <p></p>
+                    <p class="price">R$ 50,39</p>
+                    <button onclick="addToCart('Blush Compacto 6g Cor 50 Bauny', 50.39, 'img/pó.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/base.png" alt="Produto 1">
+                    <h2>Base Matte Cover Up 02 35ml - Mari Maria</h2>
+                    <p></p>
+                    <p class="price">R$ 38,69</p>
+                    <button onclick="addToCart('Base Matte Cover Up 02 35ml - Mari Maria', 38.69, 'img/base.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/paleta.png" alt="Produto 1">
+                    <h2>Paleta De Sombras So Smoothie Hbf529 - Ruby Rose</h2>
+                    <p></p>
+                    <p class="price">R$ 26,99</p>
+                    <button onclick="addToCart('Paleta De Sombras So Smoothie Hbf529 - Ruby Rose', 26.99, 'img/paleta.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/delineador.png" alt="Produto 1">
+                    <h2>Delineador lÍquido 1,9ml Preto Bauny</h2>
+                    <p></p>
+                    <p class="price">R$ 34,99</p>
+                    <button onclick="addToCart('Delineador lÍquido 1,9ml Preto Bauny', 34.99, 'img/delineador.png')">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      &copy; 2024 Pernambucanas - Todos os direitos reservados.
+  </footer>
+
+
+</body>
+
+</html>                

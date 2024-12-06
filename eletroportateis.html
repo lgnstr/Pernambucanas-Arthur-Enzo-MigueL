@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pernambucanas</title>
+  <link rel="icon" type="image/png" href="img/logo.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slide.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Pernambucanas Logo" class="logo-img">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="feminino.html">Feminino</a></li>
+        <li><a href="masculino.html">Masculino</a></li>
+        <li><a href="infantil.html">Infantil</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="casa.html">Casa</a></li>
+        <li><a href="eletroportateis.html">Eletroportáteis</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="O que você procura?" class="search-input">
+      <button class="search-button">🔍</button>
+    </div>    
+    <div class="header-buttons">
+      <a href="index.html">
+        <img src="img/cadastro.png" alt="Cadastro" class="signup-image">
+      </a>
+      <a href="home.html">
+        <img src="img/home.svg" alt="Home" class="home-image"> 
+      </a>
+
+     <a id="cartButton">
+      <img src="img/cart.svg" alt="Carrinho" class="cart-image">
+     </a>
+  </header>
+       
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-header">
+      Carrinho de Compras
+      <button id="closeCart" class="close-cart-btn">×</button>
+    </div>
+    <div class="cart-content" id="cartContent"></div>
+    <div class="cart-footer">
+      <button class="checkout-button">Finalizar Compra</button>
+    </div>
+  </div>
+  
+    <script src="cart.js"></script>
+    
+    <div class="container">
+        <Left><h2>Departamento de Eletroportateis</h2></Left> 
+        <div id="section3">
+            <div class="main">
+                <div class="product">
+                    <img src="img/fritadeira.png" alt="Produto 1">
+                    <h2>Fritadeira Multi GO201 110V 4L com Grade</h2>
+                    <p></p>
+                    <p class="price">R$ 299,99
+                    </p>
+                    <button onclick="addToCart('Fritadeira Multi GO201 110V 4L com Grade', 299.99, 'img/fritadeira.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/ferro.png" alt="Produto 1">
+                    <h2>Ferro Britânia BFS30 110V 1250W 5 Temperaturas</h2>
+                    <p></p>
+                    <p class="price">R$ 69,99</p>
+                    <button onclick="addToCart('Ferro Britânia BFS30 110V 1250W 5 Temperaturas', 69.99, 'img/ferro.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/liquidificador.png" alt="Produto 1">
+                    <h2>Liquidificador Walita HR2271 220V</h2>
+                    <p></p>
+                    <p class="price">R$ 249,99</p>
+                    <button onclick="addToCart('Liquidificador Walita HR2271 220V', 249.99, 'img/liquidificador.png')">Comprar Agora</button>
+                </div>
+
+                  <div class="product">
+                    <img src="img/ventilador.png" alt="Produto 1">
+                    <h2>Ventilador Mallory Chronos PR GR 220V</h2>
+                    <p></p>
+                    <p class="price">R$ 349,99</p>
+                    <button onclick="addToCart('Ventilador Mallory Chronos PR GR 220V', 349.99, 'img/ventilador.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/chaleira.png" alt="Produto 1">
+                    <h2>Chaleira Britânia BCH06P 220V 1.7L</h2>
+                    <p></p>
+                    <p class="price">R$ 129,99</p>
+                    <button onclick="addToCart('Chaleira Britânia BCH06P 220V 1.7L', 129.99, 'img/chaleira.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/aprt.png" alt="Produto 1">
+                    <h2>Aspirador ASP 1101 220V</h2>
+                    <p></p>
+                    <p class="price">R$ 199,99</p>
+                    <button onclick="addToCart('Aspirador ASP 1101 220V', 199.99, 'img/aprt.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/sanduiche.png" alt="Produto 1">
+                    <h2>Sanduicheira Mickey Mouse Funny Plates 220V</h2>
+                    <p></p>
+                    <p class="price">R$ 99,99</p>
+                    <button onclick="addToCart('Sanduicheira Mickey Mouse Funny Plates 220V', 99.99, 'img/sanduiche.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/churras.png" alt="Produto 1">
+                    <h2>Churrasqueira Britânia BCQ90 110V 1500W</h2>
+                    <p></p>
+                    <p class="price">R$ 259,99</p>
+                    <button onclick="addToCart('Churrasqueira Britânia BCQ90 110V 1500W', 259.99, 'img/churras.png')">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      &copy; 2024 Pernambucanas - Todos os direitos reservados.
+  </footer>
+
+
+</body>
+
+</html>                

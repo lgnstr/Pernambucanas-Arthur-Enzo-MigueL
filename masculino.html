@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pernambucanas</title>
+  <link rel="icon" type="image/png" href="img/logo.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slide.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Pernambucanas Logo" class="logo-img">
+      </div>
+    <nav>
+        <ul>
+          <li><a href="feminino.html">Feminino</a></li>
+          <li><a href="masculino.html">Masculino</a></li>
+          <li><a href="infantil.html">Infantil</a></li>
+          <li><a href="beleza.html">Beleza</a></li>
+          <li><a href="casa.html">Casa</a></li>
+          <li><a href="eletroportateis.html">Eletroportáteis</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="O que você procura?" class="search-input">
+        <button class="search-button">🔍</button>
+      </div>    
+      <div class="header-buttons">
+        <a href="index.html">
+          <img src="img/cadastro.png" alt="Cadastro" class="signup-image">
+        </a>
+        <a href="home.html">
+          <img src="img/home.svg" alt="Home" class="home-image"> 
+        </a>
+  
+       <a id="cartButton">
+        <img src="img/cart.svg" alt="Carrinho" class="cart-image">
+       </a>
+  </header>
+
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-header">
+      Carrinho de Compras
+      <button id="closeCart" class="close-cart-btn">×</button>
+    </div>
+    <div class="cart-content" id="cartContent"></div>
+    <div class="cart-footer">
+      <button class="checkout-button">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+
+    <div class="container">
+        <Left><h2>Departamento Masculino</h2></Left> 
+        <div id="section3">
+            <div class="main">
+                <div class="product">
+                    <img src="img/blusama.png" alt="Produto 1">
+                    <h2>Jaqueta Básica Masculina Rovitex Preto</h2>
+                    <p></p>
+                    <p class="price">R$ 199,99</p>
+                    <button onclick="addToCart('Jaqueta Básica Masculina Rovitex Preto', 199.99, 'img/blusama.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/blusa2.png" alt="Produto 1">
+                    <h2>
+                        Jaqueta Masculina Com Bolsos E Capuz Rovitex Teen Prateado</h2>
+                    <p></p>
+                    <p class="price">R$ 240,98</p>
+                    <button onclick="addToCart('Jaqueta Masculina Com Bolsos E Capuz Rovitex Teen Prateado', 240.98, 'img/blusa2.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/regata.png" alt="Produto 1">
+                    <h2>Kit Bermuda e Regata Masculino</h2>
+                    <p></p>
+                    <p class="price">R$ 104,99</p>
+                    <button onclick="addToCart('Kit Bermuda e Regata Masculino', 104.99, 'img/regata.png')">Comprar Agora</button>
+                </div>
+
+                               <div class="product">
+                    <img src="img/bermuda1.png" alt="Produto 1">
+                    <h2>Bermuda Juvenil Masculina Em Moletinho Minty Marrom</h2>
+                    <p></p>
+                    <p class="price">R$ 124,98</p>
+                    <button onclick="addToCart('Bermuda Juvenil Masculina Em Moletinho Minty Marrom', 124.98, 'img/bermuda1.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/bermudabege.png" alt="Produto 1">
+                    <h2>Bermuda Masculina Com Bolsos Rovitex Bege</h2>
+                    <p></p>
+                    <p class="price">R$ 77,98</p>
+                    <button onclick="addToCart('Bermuda Masculina Com Bolsos Rovitex Bege', 77.98, 'img/bermudabege.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/calça.png" alt="Produto 1">
+                    <h2>Calça Masculina Em Sarja Diametro Preto</h2>
+                    <p></p>
+                    <p class="price">R$ 105,98</p>
+                    <button onclick="addToCart('Calça Masculina Em Sarja Diametro Preto', 105.98, 'img/calça.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/calça1.png" alt="Produto 1">
+                    <h2>Calça Masculina Jogger Trick Nick Cinza</h2>
+                    <p></p>
+                    <p class="price">R$ 75,98</p>
+                    <button onclick="addToCart('Calça Masculina Jogger Trick Nick Cinza', 75.98, 'img/calça1.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/pantufa.png" alt="Produto 1">
+                    <h2>Pantufa Masculina Em Plush Bene Casa Bege</h2>
+                    <p></p>
+                    <p class="price">R$ 29,98</p>
+                    <button onclick="addToCart('Pantufa Masculina Em Plush Bene Casa Bege', 29.98, 'img/pantufa.png')">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer>
+    &copy; 2024 Pernambucanas - Todos os direitos reservados.
+</footer>
+</body>
+</html>                

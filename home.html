@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pernambucanas</title>
+  <link rel="icon" type="image/png" href="img/logo.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slide.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Pernambucanas Logo" class="logo-img">
+    </div>
+    <div class="header-buttons">
+      
+    </div>
+    <nav>
+      <ul>
+        <li><a href="feminino.html">Feminino</a></li>
+        <li><a href="masculino.html">Masculino</a></li>
+        <li><a href="#">Infantil</a></li>
+        <li><a href="#">Beleza</a></li>
+        <li><a href="#">Casa</a></li>
+        <li><a href="#">Eletroportáteis</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="O que você procura?" class="search-input">
+      <button class="search-button">🔍</button>
+    </div>    
+    <div class="header-buttons">
+      <a href="index.html">
+        <img src="img/cadastro.png" alt="Cadastro" class="signup-image">
+      </a>
+      <a href="home.html">
+        <img src="img/home.svg" alt="Home" class="home-image"> 
+      </a>
+
+     <a id="cartButton">
+      <img src="img/cart.svg" alt="Carrinho" class="cart-image">
+     </a>
+  </header>
+  <section class="slider">
+    <div class="slider-content">
+        
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slide-box primeiro">
+            <img class="img-desktop" src="img/slide-1.jpg" alt="slide 1">
+            <img class="img-mobile" src="img/slide-1-mob.jpg" alt="slide 1">
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="img/slide-2.jpg" alt="slide 3">
+            <img class="img-mobile" src="img/slide-2-mob.jpg" alt="slide 1">
+        </div>
+
+        <div class="slide-box">
+            <img class="img-desktop" src="img/slide-3.jpg" alt="slide 3">
+            <img class="img-mobile" src="img/slide-3-mob.jpg" alt="slide 3">
+        </div>
+
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+</section>
+
+<div id="cartModal" class="cart-modal">
+  <div class="cart-header">
+    Carrinho de Compras
+    <button id="closeCart" class="close-cart-btn">×</button>
+  </div>
+  <div class="cart-content" id="cartContent"></div>
+  <div class="cart-footer">
+    <button class="checkout-button">Finalizar Compra</button>
+  </div>
+</div>
+
+
+
+  <script src="cart.js"></script>
+
+<div class="container">
+    <h2>Principais Ofertas</h2>
+</div>
+<div id="section3">
+    <div class="main">
+      <div id="section3">
+        <div class="main">
+            <div class="product">
+                <img src="img/escova.png" alt="Produto 1">
+                <h2>Escova Oval Taiff Easy Lilas 127V</h2>
+                <p></p>
+                <p class="price">R$ 136,79</p>
+                <button onclick="addToCart('Escova Oval Taiff Easy Lilas 127V', 136.79, 'img/escova.png')">Comprar Agora</button>
+            </div>
+    
+            <div class="product">
+                <img src="img/maquina.png" alt="Produto 1">
+                <h2>Cortador De Cabelo Multi Eb148 220V Preto</h2>
+                <p></p>
+                <p class="price">R$ 44,99</p>
+                <button onclick="addToCart('Cortador De Cabelo Multi Eb148 220V Preto', 44.99, 'img/maquina.png')">Comprar Agora</button>
+            </div>
+    
+            <div class="product">
+                <img src="img/chapinhap.png" alt="Produto 1">
+                <h2>Modelador Taiff Vulcan Cobre Diamante</h2>
+                <p></p>
+                <p class="price">R$ 119,69</p>
+                <button onclick="addToCart('Modelador Taiff Vulcan Cobre Diamante', 119.69, 'img/chapinhap.png')">Comprar Agora</button>
+
+    </div>
+    </div>
+
+    <footer>
+      &copy; 2024 Pernambucanas - Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>

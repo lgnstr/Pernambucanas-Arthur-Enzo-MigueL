@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pernambucanas</title>
+  <link rel="icon" type="image/png" href="img/logo.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slide.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Pernambucanas Logo" class="logo-img">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="feminino.html">Feminino</a></li>
+        <li><a href="masculino.html">Masculino</a></li>
+        <li><a href="infantil.html">Infantil</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="casa.html">Casa</a></li>
+        <li><a href="eletroportateis.html">Eletroportáteis</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="O que você procura?" class="search-input">
+      <button class="search-button">🔍</button>
+    </div>    
+    <div class="header-buttons">
+      <a href="index.html">
+        <img src="img/cadastro.png" alt="Cadastro" class="signup-image">
+      </a>
+      <a href="home.html">
+        <img src="img/home.svg" alt="Home" class="home-image"> 
+      </a>
+
+     <a id="cartButton">
+      <img src="img/cart.svg" alt="Carrinho" class="cart-image">
+     </a>
+  </header>
+       
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-header">
+      Carrinho de Compras
+      <button id="closeCart" class="close-cart-btn">×</button>
+    </div>
+    <div class="cart-content" id="cartContent"></div>
+    <div class="cart-footer">
+      <button class="checkout-button">Finalizar Compra</button>
+    </div>
+  </div>
+  
+    <script src="cart.js"></script>
+    
+    <div class="container">
+        <Left><h2>Departamento de Casa</h2></Left> 
+        <div id="section3">
+            <div class="main">
+                <div class="product">
+                    <img src="img/toalha.png" alt="Produto 1">
+                    <h2>Toalha de Banho Decor Camesa Verde</h2>
+                    <p></p>
+                    <p class="price">R$ 25,98
+                    </p>
+                    <button onclick="addToCart('Toalha de Banho Decor Camesa Verde', 25.98, 'img/toalha.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/traviseiro.png" alt="Produto 1">
+                    <h2>Travesseiro Sono E Saúde Baby Altenburg Branco</h2>
+                    <p></p>
+                    <p class="price">R$ R$ 24,99</p>
+                    <button onclick="addToCart('Travesseiro Sono E Saúde Baby Altenburg Branco', 24.99, 'img/traviseiro.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/manta.png" alt="Produto 1">
+                    <h2>Manta de Microfibra Lisa Casal Infinita Cor Verde</h2>
+                    <p></p>
+                    <p class="price">R$ 49,99</p>
+                    <button onclick="addToCart('Manta de Microfibra Lisa Casal Infinita Cor Verde', 49.99, 'img/manta.png')">Comprar Agora</button>
+                </div>
+
+                  <div class="product">
+                    <img src="img/toalhaverde.png" alt="Produto 1">
+                    <h2>Toalha Banhão Capri Atlântica Verde</h2>
+                    <p></p>
+                    <p class="price">R$ 69,99</p>
+                    <button onclick="addToCart('Toalha Banhão Capri Atlântica Verde', 69.99, 'img/toalhaverde.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/cama.png" alt="Produto 1">
+                    <h2>Conjunto Colcha Microfibra Casal La Dotta Bege</h2>
+                    <p></p>
+                    <p class="price">R$ 160,98</p>
+                    <button onclick="addToCart('Conjunto Colcha Microfibra Casal La Dotta Bege', 160.98, 'img/cama.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/sla.png" alt="Produto 1">
+                    <h2>Colcha 2 Porta Travesseiros King Twill Mixed Block</h2>
+                    <p></p>
+                    <p class="price">R$ 209,99</p>
+                    <button onclick="addToCart('Colcha 2 Porta Travesseiros King Twill Mixed Block', 209.99, 'img/sla.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/protetor.png" alt="Produto 1">
+                    <h2>Protetor Colchão Solteiro Carvão Ativado Altenburg Branco</h2>
+                    <p></p>
+                    <p class="price">R$ 189,99</p>
+                    <button onclick="addToCart('Protetor Colchão Solteiro Carvão Ativado Altenburg Branco', 189.99, 'img/protetor.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/almofada.png" alt="Produto 1">
+                    <h2>Kit 4 Capas Para Almofadas Wevans Marrom</h2>
+                    <p></p>
+                    <p class="price">R$ R$ 79,99</p>
+                    <button onclick="addToCart('Kit 4 Capas Para Almofadas Wevans Marrom', 79.99, 'img/almofada.png')">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      &copy; 2024 Pernambucanas - Todos os direitos reservados.
+  </footer>
+
+
+</body>
+
+</html>                

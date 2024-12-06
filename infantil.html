@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pernambucanas</title>
+  <link rel="icon" type="image/png" href="img/logo.png"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slide.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Pernambucanas Logo" class="logo-img">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="feminino.html">Feminino</a></li>
+        <li><a href="masculino.html">Masculino</a></li>
+        <li><a href="infantil.html">Infantil</a></li>
+        <li><a href="beleza.html">Beleza</a></li>
+        <li><a href="casa.html">Casa</a></li>
+        <li><a href="eletroportateis.html">Eletroportáteis</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="O que você procura?" class="search-input">
+      <button class="search-button">🔍</button>
+    </div>    
+    <div class="header-buttons">
+      <a href="index.html">
+        <img src="img/cadastro.png" alt="Cadastro" class="signup-image">
+      </a>
+      <a href="home.html">
+        <img src="img/home.svg" alt="Home" class="home-image"> 
+      </a>
+
+     <a id="cartButton">
+      <img src="img/cart.svg" alt="Carrinho" class="cart-image">
+     </a>
+  </header>
+       
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-header">
+      Carrinho de Compras
+      <button id="closeCart" class="close-cart-btn">×</button>
+    </div>
+    <div class="cart-content" id="cartContent"></div>
+    <div class="cart-footer">
+      <button class="checkout-button">Finalizar Compra</button>
+    </div>
+  </div>
+  
+    <script src="cart.js"></script>
+    
+    <div class="container">
+        <Left><h2>Departamento Infantil</h2></Left> 
+        <div id="section3">
+            <div class="main">
+                <div class="product">
+                    <img src="img/pijamainfatil.png" alt="Produto 1">
+                    <h2>Pijama Infantil Feminino Select Roxo</h2>
+                    <p></p>
+                    <p class="price">R$ 79,99
+                    </p>
+                    <button onclick="addToCart('Pijama Infantil Feminino Select Roxo', 79.99, 'img/pijamainfatil.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/menzinho.png" alt="Produto 1">
+                    <h2>Macacão Bebe Curto Com Zíper Suedine Kappes Verde</h2>
+                    <p></p>
+                    <p class="price">R$ 30,98</p>
+                    <button onclick="addToCart('Macacão Bebe Curto Com Zíper Suedine Kappes Verde', 30.98, 'img/menzinho.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/papete.png" alt="Produto 1">
+                    <h2>Sandália Babuche Infantil Yvate Azul</h2>
+                    <p></p>
+                    <p class="price">R$ 31,98</p>
+                    <button onclick="addToCart('Sandália Babuche Infantil Yvate Azul', 31.98, 'img/papete.png')">Comprar Agora</button>
+                </div>
+
+                  <div class="product">
+                    <img src="img/conjuntom.png" alt="Produto 1">
+                    <h2>Conjunto Infantil Camiseta Com Bermuda Trick Nick Verde</h2>
+                    <p></p>
+                    <p class="price">R$ 99,99</p>
+                    <button onclick="addToCart('Conjunto Infantil Camiseta Com Bermuda Trick Nick Verde', 99.99, 'img/conjuntom.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/conjuntob.png" alt="Produto 1">
+                    <h2>Conjunto Infantil Camiseta Com Bermuda Rovi Kids Branco</h2>
+                    <p></p>
+                    <p class="price">R$ 94,98</p>
+                    <button onclick="addToCart('Conjunto Infantil Camiseta Com Bermuda Rovi Kids Branco', 94.98, 'img/conjuntob.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/conjuntoa.png" alt="Produto 1">
+                    <h2>Conjunto Infantil Camiseta Com Bermuda Rovi Kids Azul</h2>
+                    <p></p>
+                    <p class="price">R$ 59,89</p>
+                    <button onclick="addToCart('Conjunto Infantil Camiseta Com Bermuda Rovi Kids Azul', 59.89, 'img/conjuntoa.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/roupinhaf.png" alt="Produto 1">
+                    <h2>Conjunto Menina Cotton Estampado Rosa</h2>
+                    <p></p>
+                    <p class="price">R$ 55,98</p>
+                    <button onclick="addToCart('Conjunto Menina Cotton Estampado Rosa', 55.98, 'img/roupinhaf.png')">Comprar Agora</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/blusinhan.png" alt="Produto 1">
+                    <h2>Conjunto Feminino Jaqueta Escrita e Legging Select Azul</h2>
+                    <p></p>
+                    <p class="price">R$ 88,98</p>
+                    <button onclick="addToCart('Conjunto Feminino Jaqueta Escrita e Legging Select Azul', 88.98, 'img/blusinhan.png')">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      &copy; 2024 Pernambucanas - Todos os direitos reservados.
+  </footer>
+
+
+</body>
+
+</html>                
